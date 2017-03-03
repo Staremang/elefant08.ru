@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+
+
+</head>
+
+<body>
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="display:none">
+		<symbol id="arrow_down" viewBox="0 0 74 45">
+			<path d="M58.938,19.457L37.911,40.081c-0.094,0.094-0.212,0.106-0.302,0.017L16.77,19.457h-7.07l24.375,23.975 c0.795,0.795,1.76,1.186,2.719,1.469c0.447,0.132,0.891,0.095,1.32,0.095c1.064,0,2.619-0.613,3.382-1.377l24.514-24.161H58.938z"/>
+			<rect x="0.501" y="-0.35" width="74" height="4"/>
+			<rect x="0.501" y="6.65" width="74" height="2"/>
+		</symbol>
+	</svg>
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+	<div class="home_page page-fixed_header page-fixed_footer ">
+		<header>
+			<div class="inner_wrap">
+				<div class="mob_menu_btn" id="mob_menu_btn"></div>
+				<a href="/" class="logo"></a>
+				<nav>
+					<div class="nav_inner">
+					<ul>
+						<li><a href="javascript://" class="with_arrow">
+							О компании</a>
+							<ul class="submenu">
+								<li><a href="#">История</a></li>
+								<li><a href="#">Награды</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">Обратная связь</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript://" class="with_arrow">Продукция</a>
+							<ul class="submenu">
+								<li><a href="#">Колбасы варёные</a></li>
+								<li><a href="#">Колбасы полукопчёные</a></li>
+								<li><a href="#">Сосиски и сардельки</a></li>
+								<li><a href="#">Ветчины</a></li>
+								<li><a href="#">Мясные деликатесы</a></li>
+								<li><a href="#">Хлодец и горчица</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript://" class="with_arrow">Это интересно</a>
+							<ul class="submenu">
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">Рецепты</a></li>
+								<li><a href="#">Из истории колбасы</a></li>
+							</ul>
+						</li>
+						<li><a href="javascript://" class="with_arrow">Партнёрам</a>
+							<ul class="submenu">
+								<li><a href="#">Как стать партнером</a></li>
+								<li><a href="#">Реквизиты и контакты</a></li>
+							</ul>
+							</li>
+						<li><a href="javascript://" class="with_arrow">Где купить</a>
+							<ul class="submenu">
+								<li><a href="#">Владивосток</a></li>
+								<li><a href="#">Хабаровск</a></li>
+								<li><a href="#">Ю.-Сахалинск</a></li>
+							</ul>
+						</li>
+						<li class="less768"><a href="#" class="with_arrow">Контакты</a>
+						</li>
+						<li class="less768"><a href="#" class="with_arrow">PDF-каталог</a>
+						
+						</li>
+					</ul>
+						
+						
+							
+						
+						<a href="#" class="pdf_catalog">
+							<span class="pdf">PDF</span><br>
+							<span class="catalog">каталог</span>
+						</a>
+					</div>
+				</nav>
+				<div class="mark less768"></div>
+			</div>
+		</header>
+		<section class="home_section news_section sec_wave_bot page-fixed__first" id="news_section" data-parallax="scroll" data-bleed="20" data-image-src="img/News_1920.jpg" data-speed="0.5" naturalWidth="1920" naturalHeight="1080" >
+			<div class="grey_filter"></div>
+			<div class="inner_wrap">
+				<div class="descr less768">Производитель колбасных изделий<br> и мясных деликатесов</div>
+				<h2 class="less768">Новости бренда</h2>
+				<div class="news_owl_carousel slider">
+			    <div class="item">
+						<div class="date">23.08.2016</div>
+						<h3 onclick="show_modal('#newsModal')">Заголовок новости</h3>
+						<p>Анонс новости о новом продукте, сщбытие из жизни компании, рекламная или промо-акция...</p>
+						<span class="more" onclick="show_modal('#newsModal')">Подробнее</span>
+			    </div>
+			    <div class="item">
+						<div class="date">23.08.2016</div>
+						<h3 onclick="show_modal('#newsModal')">Заголовок новости</h3>
+						<p>Анонс новости о новом продукте, сщбытие из жизни компании, рекламная или промо-акция...</p>
+						<span class="more" onclick="show_modal('#newsModal')">Подробнее</span>
+			    </div>
+			    <div class="item">
+						<div class="date">23.08.2016</div>
+						<h3 onclick="show_modal('#newsModal')">Заголовок новости</h3>
+						<p>Анонс новости о новом продукте, сщбытие из жизни компании, рекламная или промо-акция...</p>
+						<span class="more" onclick="show_modal('#newsModal')">Подробнее</span>
+			    </div>
+				</div>
+				<a href="#" class="all_posts">Все новости</a>
+				<a href="#catalog_section" class="slide_down">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="74px" height="45px" >
+						<use fill="white" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/swg/story_sprite.svg#arrow_down"></use>
+					</svg>
+				</a>
+			</div>
+		</section>
+		<section class="home_section catalog_section" id="catalog_section">
+			<div class="inner_wrap">
+				<h2>Каталог продукции</h2>		
+				<div class="slider cook_owl_carousel less768">
+			    <div class="item">
+				<a href="#" class="catalog1"></a>		
+			    </div>
+			   	<div class="item">
+				<a href="#" class=" catalog2"></a>		
+			    </div>
+			    <div class="item">
+				<a href="#" class=" catalog3"></a>		
+			    </div>
+			     <div class="item">
+				<a href="#" class=" catalog4"></a>		
+			    </div>
+			     <div class="item">
+				<a href="#" class=" catalog5"></a>		
+			    </div>
+			     <div class="item">
+				<a href="#" class=" catalog6"></a>		
+			    </div>
+				</div>
+				<a href="#" class="catalog_item catalog1"></a>		
+				<a href="#" class="catalog_item catalog2"></a>		
+				<a href="#" class="catalog_item catalog3"></a>		
+				<a href="#" class="catalog_item catalog4"></a>		
+				<a href="#" class="catalog_item catalog5"></a>		
+				<a href="#" class="catalog_item catalog6"></a>		
+				<a href="#cook_section" class="slide_down">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="74px" height="45px" >
+						<use fill="#B3282D" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow_down"></use>
+					</svg>
+				</a>
+			</div>
+		</section>
+		<section class="home_section cook_section sec_wave_bot sec_wave_top" id="cook_section" data-parallax="scroll" data-bleed="20" data-image-src="img/Recipes_Pizza_1920_2.jpg" data-speed="0.5" naturalWidth="1920" naturalHeight="1080">
+			<div class="grey_filter"></div>
+			<div class="inner_wrap">
+				<h2>Готовим с Элефантом</h2>
+				<div class="cook_owl_carousel slider">
+			    <div class="item">
+						<div class="descr">рецепт</div>
+						<h3>Пицца пепперони</h3>
+						<div class="text">
+							<p>Колбаса — это полноценный ингредиент разнообразных блюд. Предлагаем попробовать самим приготовить вкуснейшую пиццу пепперони в двух версиях: итальянскую и американскую. В главной роли — Салями от Элефанта!</p>
+						</div>
+						<a href="#" class="more">Подробнее</a>
+			    </div>
+			   	<div class="item">
+						<div class="descr">рецепт</div>
+						<h3>Пицца пепперони</h3>
+						<div class="text">
+						<p>Колбаса — это полноценный ингредиент разнообразных блюд. Предлагаем попробовать самим приготовить вкуснейшую пиццу пепперони в двух версиях: итальянскую и американскую. В главной роли — Салями от Элефанта!</p>
+						</div>
+						<a href="#" class="more">Подробнее</a>
+			    </div>
+			    <div class="item">
+						<div class="descr">рецепт</div>
+						<h3>Пицца пепперони</h3>
+						<div class="text">
+						<p>Колбаса — это полноценный ингредиент разнообразных блюд. Предлагаем попробовать самим приготовить вкуснейшую пиццу пепперони в двух версиях: итальянскую и американскую. В главной роли — Салями от Элефанта!</p>
+						</div>
+						<a href="#" class="more">Подробнее</a>
+			    </div>
+				</div>
+				<a href="#" class="all_posts">Все рецепты</a>
+				<a href="#history_section" class="slide_down">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="74px" height="45px" >
+						<use fill="white" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow_down"></use>
+					</svg>
+				</a>
+			</div>
+		</section>
+		<div class="paprer_bg">
+		<section class="home_section history_section" id="history_section">
+			<div class="inner_wrap">
+				<h2>Из истории колбасы</h2>
+				<div class="cook_owl_carousel slider more768">
+			   <div class="item">
+			    	<div class="sub_item">
+			    		<span class="sub_name"></span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Сосиски</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_doktor.svg)";></div>
+			    		<p>Какой-то текст про появлениеп оявлениепоявле  сосисок вообще, как и когда они появились в России ...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    	<div class="sub_item">
+			    		<span class="sub_name">мясо</span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Запечёное</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_ham.svg)";></div>
+			    		<p>Какой-то текст про особенности натурального копчения пара слов и пара ещё чуть чуть и ещё немножко ...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    	<div class="sub_item">
+			    		<span class="sub_name"></span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Ветчина</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_krakovkaya.svg)";></div>
+			    		<p>Самая популярная среди советских колбас, для насыщения белками, углеводами и энергией ...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    	<div class="sub_item">
+			    		<span class="sub_name">колбаса</span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Докторская</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_sausages.svg)";></div>
+			    		<p>Самая популярная среди советских колбас, для насыщения белками, углеводами и энергией ...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    	<div class="sub_item">
+			    		<span class="sub_name">колбаса</span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Сосиски</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_smoked-meat.svg)";></div>
+			    		<p>Самая популярная среди советских колбас, для насыщения белками, углеводами и энергией ...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    </div>
+			   <div class="item">
+			    	<div class="sub_item">
+			    		<span class="sub_name"></span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Сосиски</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_doktor.svg)";></div>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloribus harum laborum, eligendi id...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    	<div class="sub_item">
+			    		<span class="sub_name">мясо</span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Сосиски</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_ham.svg)";></div>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloribus harum laborum, eligendi id...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    	<div class="sub_item">
+			    		<span class="sub_name"></span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Сосиски</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_krakovkaya.svg)";></div>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloribus harum laborum, eligendi id...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    	<div class="sub_item">
+			    		<span class="sub_name"></span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Сосиски</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_sausages.svg)";></div>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloribus harum laborum, eligendi id...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    	<div class="sub_item">
+			    		<span class="sub_name"></span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Сосиски</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_smoked-meat.svg)";></div>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloribus harum laborum, eligendi id...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    </div>
+			   <div class="item">
+			    	<div class="sub_item">
+			    		<span class="sub_name"></span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Сосиски</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_doktor.svg)";></div>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloribus harum laborum, eligendi id...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    	<div class="sub_item">
+			    		<span class="sub_name">мясо</span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Сосиски</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_ham.svg)";></div>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloribus harum laborum, eligendi id...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    	<div class="sub_item">
+			    		<span class="sub_name"></span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Сосиски</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_krakovkaya.svg)";></div>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloribus harum laborum, eligendi id...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    	<div class="sub_item">
+			    		<span class="sub_name"></span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Сосиски</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_sausages.svg)";></div>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloribus harum laborum, eligendi id...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    	<div class="sub_item">
+			    		<span class="sub_name"></span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Сосиски</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_smoked-meat.svg)";></div>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloribus harum laborum, eligendi id...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    </div>
+				</div>
+				<div class="cook_owl_carousel slider less768">
+					<div class="sub_item">
+			    		<span class="sub_name"></span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Сосиски</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_doktor.svg)";></div>
+			    		<p>Какой-то текст про появлениеп оявлениепоявле  сосисок вообще, как и когда они появились в России ...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    	<div class="sub_item">
+			    		<span class="sub_name">мясо</span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Запечёное</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_ham.svg)";></div>
+			    		<p>Какой-то текст про особенности натурального копчения пара слов и пара ещё чуть чуть и ещё немножко ...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    	<div class="sub_item">
+			    		<span class="sub_name"></span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Ветчина</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_krakovkaya.svg)";></div>
+			    		<p>Самая популярная среди советских колбас, для насыщения белками, углеводами и энергией ...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    	<div class="sub_item">
+			    		<span class="sub_name">колбаса</span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Докторская</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_sausages.svg)";></div>
+			    		<p>Самая популярная среди советских колбас, для насыщения белками, углеводами и энергией ...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    	<div class="sub_item">
+			    		<span class="sub_name">колбаса</span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Сосиски</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_smoked-meat.svg)";></div>
+			    		<p>Самая популярная среди советских колбас, для насыщения белками, углеводами и энергией ...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    	<div class="sub_item">
+			    		<span class="sub_name"></span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Сосиски</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_doktor.svg)";></div>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloribus harum laborum, eligendi id...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    	<div class="sub_item">
+			    		<span class="sub_name">мясо</span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Сосиски</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_ham.svg)";></div>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloribus harum laborum, eligendi id...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    	<div class="sub_item">
+			    		<span class="sub_name"></span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Сосиски</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_krakovkaya.svg)";></div>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloribus harum laborum, eligendi id...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    	<div class="sub_item">
+			    		<span class="sub_name"></span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Сосиски</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_sausages.svg)";></div>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloribus harum laborum, eligendi id...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    	<div class="sub_item">
+			    		<span class="sub_name"></span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Сосиски</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_smoked-meat.svg)";></div>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloribus harum laborum, eligendi id...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    	<div class="sub_item">
+			    		<span class="sub_name"></span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Сосиски</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_doktor.svg)";></div>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloribus harum laborum, eligendi id...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    	<div class="sub_item">
+			    		<span class="sub_name">мясо</span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Сосиски</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_ham.svg)";></div>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloribus harum laborum, eligendi id...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    	<div class="sub_item">
+			    		<span class="sub_name"></span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Сосиски</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_krakovkaya.svg)";></div>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloribus harum laborum, eligendi id...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    	<div class="sub_item">
+			    		<span class="sub_name"></span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Сосиски</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_sausages.svg)";></div>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloribus harum laborum, eligendi id...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+			    	<div class="sub_item">
+			    		<span class="sub_name"></span>
+			    		<span class="name" onclick="show_modal('#history_modal')">Сосиски</span>
+			    		<div class="history_ico" style="background-image: url(img/swg/Story_smoked-meat.svg)";></div>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloribus harum laborum, eligendi id...</p>
+							<span class="more" onclick="show_modal('#history_modal')">Подробнее</span>
+			    	</div>
+				</div>
+				<a href="#" class="all_posts less768">Все истории</a>
+				<a href="#buy_section" class="slide_down">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="74px" height="45px" >
+						<use fill="#B3282D" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow_down"></use>
+					</svg>
+				</a>
+			</div>
+		</section>
+		</div>
+
+		<section class="home_section buy_section sec_wave_top page-fixed__last" id="buy_section" data-parallax="scroll" data-bleed="20" data-image-src="img/Buy_1920.jpg" data-speed="0.5" naturalWidth="1920" naturalHeight="1080" >
+			<div class="grey_filter"></div>
+			<div class="inner_wrap">
+				<h2>Где купить</h2>
+				<div class="cook_owl_carousel slider">
+			    <div class="item">
+						<div class="ico"></div>	
+						<div class="shop_info">
+							город<br>	
+							<span class="city">Владивосток</span><br>
+							<a href="#" class="link">Фирменный магазин</a><span class="cnt">1</span><br>
+							<a href="#" class="link">Розничные магазины</a><span class="cnt">37</span>		
+						</div>
+						<div class="map">
+							<img src="img/home_map.png" alt="">			
+						</div>
+			    </div>
+			   	<div class="item">
+						<div class="ico"></div>	
+						<div class="shop_info">
+							город<br>	
+							<span class="city">Владивосток</span><br>
+							<a href="#" class="link">Фирменный магазин</a><span class="cnt">1</span><br>
+							<a href="#" class="link">Розничные магазины</a><span class="cnt">37</span>		
+						</div>
+						<div class="map">
+							<img src="img/home_map.png" alt="">			
+						</div>
+			    </div>
+			    <div class="item">
+						<div class="ico"></div>	
+						<div class="shop_info">
+							город<br>	
+							<span class="city">Владивосток</span><br>
+							<a href="#" class="link">Фирменный магазин</a><span class="cnt">1</span><br>
+							<a href="#" class="link">Розничные магазины</a><span class="cnt">37</span>		
+						</div>
+						<div class="map">
+							<img src="img/home_map.png" alt="">			
+						</div>
+			    </div>
+				</div>
+				<a href="#news_section" class="slide_up">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="74px" height="45px" >
+						<use fill="white" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow_down"></use>
+					</svg>
+				</a>
+			</div>
+		</section>
+		<footer>
+			<div class="inner_wrap">
+				<a href="#" class="pdf_catalog less768">
+					<span class="pdf">PDF</span><br>
+					<span class="catalog">каталог</span>
+				</a>
+				<div class="contacts_links less768">
+				<a href="#" class="contacts_link ">Контакты</a><br><a href="#" class="contacts_link " onclick="show_modal('#messageModal')">Отправить сообщение</a>
+				</div>
+				<div class="phones less768">
+						<span class="pre">+7 (423)</span>
+						<span class="tel">260-22-14,</span> <br><span class="tel">260-22-30,</span> <span class="tel">260</span>
+					</div>
+				<div class="left">
+					<span class="copyright">
+						&#169; 2008-2016&nbsp;&nbsp;&nbsp;&laquo;Элефант 08&raquo;
+					</span>
+					<span class="descr">
+						Производитель колбасных изделий <br>и мясных деликатесов
+					</span>
+				</div>
+				<div class="search">
+				<input type="text" id="search">
+				<div class="end"></div>
+				</div>
+				<div class="right">
+					<div class="phones more768">
+						<span class="pre">+7 (423)</span>
+						<span class="tel">260-22-14,</span> <span class="tel">260-22-30,</span> <span class="tel">260-22-31</span>
+					</div>
+					<div class="links more768">
+						<a href="javascript://" >Контакты</a> / <a href="javascript://" class="contacts_link" onclick="show_modal('#messageModal')">Отправить сообщение</a>
+					</div>
+				</div>
+				<div class="footer_nav more768">
+					<div class="nav_col">
+						<h4>О бренде</h4>
+						<a href="#">История</a>
+						<a href="#">Награды</a>
+						<a href="#">Контакты</a>
+						<a href="#">Обратная связь</a>
+					</div>
+					<div class="nav_col">
+						<h4>Продукция</h4>
+						<div class="fll">
+							<a href="#">Колбасы варёные</a>
+							<a href="#">Колбасы полукопчёные</a>
+							<a href="#">Сосиски и сардельки</a>
+							<a href="#">Ветчины</a>
+						</div>
+						<div class="fll">	
+							<a href="#">Мясные деликатесы</a>
+							<a href="#">Холодец и горчица</a>
+							<a href="#">PDF-каталог</a>
+						</div>
+
+					</div>
+					<div class="nav_col">
+						<h4>ЭТО ИНТЕРЕСНО</h4>
+						<a href="#">Новости</a>
+						<a href="#">Рецепты</a>
+						<a href="#">Из истории колбасы</a>
+					</div>	
+					<div class="nav_col">
+						<h4>ПАРТНЁРАМ</h4>
+						<a href="#">Как стать партнёром</a>
+						<a href="#">Реквизиты и контакты</a>
+					</div>	
+					<div class="nav_col">
+						<h4>Где купить</h4>
+						<a href="#">Владивосток</a>
+						<a href="#">Хабаровск</a>
+						<a href="#">Ю.-Сахалинск</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+	<div class="modal history_modal hideModal" id="history_modal">
+		<div class="modal_wrap">
+			<div class="close"></div>
+			<div class="flexslider" id="slider">
+		    	<div class="left">
+<!--		    		<img src="img/swg/Story_doktor.svg" alt="">-->
+	    	
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/swg/story_sprite.svg#story_doktor"></use>
+					</svg>
+		    	</div>
+		    	<div class="sub_title">колбаса</div>
+		    	<div class="title">Докторская</div>
+		    	<div class="text">
+		    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi maiores expedita aut, quas. Maiores similique facere minus. Fugiat dolore voluptas praesentium itaque ducimus, aspernatur cumque. Dignissimos adipisci ipsa similique impedit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi maiores expedita aut, quas. Maiores similique facere minus. Fugiat dolore voluptas praesentium itaque ducimus, aspernatur cumque. Dignissimos adipisci ipsa similique impedit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi maiores expedita aut, quas. Maiores similique facere minus. Fugiat dolore voluptas praesentium itaque ducimus, aspernatur cumque. Dignissimos adipisci ipsa similique impedit!</p>
+			    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi maiores expedita aut, quas. Maiores similique facere minus. Fugiat dolore voluptas praesentium itaque ducimus, aspernatur cumque. Dignissimos adipisci ipsa similique impedit!</p>
+			    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi maiores expedita aut, quas. Maiores similique facere minus. Fugiat dolore voluptas praesentium itaque ducimus, aspernatur cumque. Dignissimos adipisci ipsa similique impedit!</p>
+			    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi maiores expedita aut, quas. Maiores similique facere minus. Fugiat dolore voluptas praesentium itaque ducimus, aspernatur cumque. Dignissimos adipisci ipsa similique impedit!</p>
+			    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi maiores expedita aut, quas. Maiores similique facere minus. Fugiat dolore voluptas praesentium itaque ducimus, aspernatur cumque. Dignissimos adipisci ipsa similique impedit!</p>
+			    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi maiores expedita aut, quas. Maiores similique facere minus. Fugiat dolore voluptas praesentium itaque ducimus, aspernatur cumque. Dignissimos adipisci ipsa similique impedit!</p>
+		    	</div>
+		</div>
+		<div id="carousel" class="flexslider">
+		  <ul class="slides">
+		    <li>
+		    	<figure>
+		   			<img src="img/img1.jpg" alt="">
+		   		</figure>
+		   		<span class="title_min">Докторская в н/о</span>
+		    </li>
+		    <li>
+		    	<figure>
+		   			<img src="img/img1.jpg" alt="">
+		   		</figure>
+		   		<span class="title_min">Докторская в целофане</span>
+		    </li>
+		    <li>
+		    	<figure>
+		   			<img src="img/img1.jpg" alt="">
+		   		</figure>
+		   		<span class="title_min">Докторская в н/о</span>
+		    </li>
+		    <li>
+		    	<figure>
+		   			<img src="img/img1.jpg" alt="">
+		   		</figure>
+		   		<span class="title_min">Докторская в н/о</span>
+		    </li>
+		  </ul>
+		</div>
+		</div>
+	</div>
+
+
+	<div class="modal messageModal hideModal" id="messageModal">
+		<div class="modal_wrap">
+			<div class="close"></div>
+			<div class="stamp"></div>
+			<div class="wave"></div>
+			<h2>Написать письмо</h2>
+			<form>
+				<span class="group">
+					<label>Ваше имя: <span class="red">*</span></label>
+					<input type="text">
+				</span>
+				<span class="group more768">
+					<label>Ваш город:</label>
+					<input type="text">
+				</span>
+				<span class="group">
+					<label>Ваше e-mail: <span class="red">*</span></label>
+					<input type="text">
+				</span>
+				<span class="group">
+					<label>Ваш телефон:</label>
+					<input type="text">
+				</span>
+				<span class="group less768">
+					<label>Ваш город:</label>
+					<input type="text">
+				</span>
+				<label>Ваше сообщение: <span class="red">*</span></label>
+				<textarea cols="30" rows="10"></textarea>
+				<button type="submit">отправить</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="modal newsModal hideModal" id="newsModal">
+		<div class="modal_wrap">
+			<div class="close"></div>
+			<div class="news_owl_carousel slider">
+			    <div class="item">
+			    	<figure>
+			    		<img src="img/img2.jpg" alt="">
+			    	</figure>
+			    	
+			    </div>
+			    <div class="item">
+			    	<figure>
+			    		<img src="img/img2.jpg" alt="">
+			    	</figure>
+			    	
+			    </div>
+			    <div class="item">
+			    	<figure>
+			    		<img src="img/img2.jpg" alt="">
+			    	</figure>
+			    	
+			    </div>
+				</div>
+				<div class="news_text">
+					<div class="date">23.08.2016</div>
+		    	<h3>Летнее обновление ассортимента</h3>
+		    	<div class="text">
+		    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, quod cupiditate? Ut ipsa eos, ratione perferendis veniam alias consectetur, porro illo laboriosam, perspiciatis fugiat, est cumque! Inventore qui odio perferendis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, quod cupiditate? Ut ipsa eos, ratione perferendis veniam alias consectetur, porro illo laboriosam, perspiciatis fugiat, est cumque! Inventore qui odio perferendis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, quod cupiditate? Ut ipsa eos, ratione perferendis veniam alias consectetur, porro illo laboriosam, perspiciatis fugiat, est cumque! Inventore qui odio perferendis!</p>
+		    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, quod cupiditate? Ut ipsa eos, ratione perferendis veniam alias consectetur, porro illo laboriosam, perspiciatis fugiat, est cumque! Inventore qui odio perferendis!</p>
+		    	</div>
+				</div>
+		</div>
+	</div>
+
+
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/anchor.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+
+	<script src="js/common.js"></script>
+	
+</body>
+</html>

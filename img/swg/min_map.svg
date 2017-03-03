@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" id="Шар_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="44px" height="44px" viewBox="0 0 44 44" enable-background="new 0 0 44 44" xml:space="preserve">
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="-255" y="-302" width="320" height="1234.336"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_2_)" fill="#9F4430" d="M-119.829,372.52c3.032,0,5.5,2.468,5.5,5.501c0,3.032-2.468,5.499-5.5,5.499
+		s-5.5-2.467-5.5-5.499C-125.329,374.987-122.861,372.52-119.829,372.52 M-119.829,370.52c-4.143,0-7.5,3.358-7.5,7.501
+		c0,4.141,3.357,7.499,7.5,7.499s7.5-3.358,7.5-7.499C-112.329,373.878-115.686,370.52-119.829,370.52"/>
+	
+		<polyline clip-path="url(#SVGID_2_)" fill="none" stroke="#9F4430" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-121,375 -121,379 -117,379 	"/>
+	<g opacity="0.6" clip-path="url(#SVGID_2_)">
+		<g>
+			<defs>
+				<rect id="SVGID_3_" width="44" height="44"/>
+			</defs>
+			<clipPath id="SVGID_4_">
+				<use xlink:href="#SVGID_3_"  overflow="visible"/>
+			</clipPath>
+			<rect clip-path="url(#SVGID_4_)" fill="#666666" width="44" height="44"/>
+		</g>
+	</g>
+	<polyline clip-path="url(#SVGID_2_)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" points="16,38 16,28 
+		6,28 	"/>
+	
+		<line clip-path="url(#SVGID_2_)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="16" y1="27.999" x2="6" y2="37.999"/>
+	<polyline clip-path="url(#SVGID_2_)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" points="28,6 28,16 
+		38,16 	"/>
+	
+		<line clip-path="url(#SVGID_2_)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="28" y1="16" x2="38" y2="6"/>
+</g>
+</svg>
