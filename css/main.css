@@ -163,8 +163,9 @@ header {
 header .logo {
   position: absolute;
   bottom: 0px;
-  left: 50%;
-  margin-left: -100px;
+  left: 0;
+  right: 0;
+  margin: auto;
   background: url(../img/logo_big2.png) 50% 0% no-repeat;
   background-size: cover;
   height: 250px;
@@ -306,8 +307,9 @@ header .pdf_catalog .catalog {
 .min_header:before {
   content: "";
   position: absolute;
-  left: 50%;
-  margin-left: -53px;
+  left: 0;
+  right: 0;
+  margin: auto;
   z-index: -1;
   bottom: -30px;
   height: 115px;
@@ -327,9 +329,8 @@ header .pdf_catalog .catalog {
   background-size: contain;
   height: 80px;
   width: 80px;
-  margin-left: -37px;
   bottom: -18px;
-  z-index: 15;
+  z-index: 17;
 }
 .min_header .pdf_catalog {
   height: 57px;
@@ -484,9 +485,11 @@ h2 {
   color: #fff;
   font-size: 24px;
   text-decoration: none;
-  left: 50%;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: auto;
   bottom: 110px;
-  margin-left: -88px;
   z-index: 1;
   font-family: MagistralBold, sans-serif;
   letter-spacing: 0.6px;
@@ -498,11 +501,14 @@ h2 {
 .slide_up {
   position: absolute;
   bottom: 28px;
-  left: 50%;
-  margin-left: -37px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.slide_down > svg,
+.slide_up > svg {
   width: 74px;
   height: 45px;
-  background-size: contain !important;
 }
 .slide_up {
   -webkit-transform: rotate(180deg);
@@ -636,6 +642,7 @@ h2 {
   height: 88px;
   overflow: hidden;
   text-align: justify;
+  font-weight: 700;
 }
 .history_section .more {
   bottom: 17px;
@@ -671,8 +678,10 @@ h2 {
   z-index: 1;
   right: 0px;
   top: 0px;
-  height: 104px;
-  width: 140px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 40%;
 }
 .buy_section {
   color: #41281B;
@@ -1904,6 +1913,21 @@ section.interesting .interesting__arrow {
 .products__description_dop {
   margin-top: 20px;
 }
+.products__description_dop .i-family-recipe_text {
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
+}
+.products__description_dop .i-hit_text {
+  -webkit-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  transform: translateY(-4px);
+}
+.products__description_dop .i-novelty_text {
+  -webkit-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
 .products__background {
   position: absolute;
   bottom: 25px;
@@ -2090,11 +2114,10 @@ section.interesting .interesting__arrow {
   .history_section .more {
     bottom: 10px;
   }
-  .slide_down,
-  .slide_up {
+  .slide_down > svg,
+  .slide_up > svg {
     width: 60px;
     height: 36px;
-    margin-left: -30px;
   }
   footer .phones {
     font-size: 22px;
@@ -2642,15 +2665,18 @@ section.interesting .interesting__arrow {
     background-image: url("../img/swg/Logo_svg.svg");
     height: 70px;
     width: 70px;
-    margin-left: -35px;
     bottom: -14px;
     z-index: 15;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
   header:before {
     content: "";
     position: absolute;
-    left: 50%;
-    margin-left: -50px;
+    left: 0;
+    right: 0;
+    margin: auto;
     z-index: -1;
     bottom: -25px;
     height: 100px;
@@ -2824,7 +2850,7 @@ section.interesting .interesting__arrow {
     bottom: 16px;
   }
   .history_section .slider {
-    height: 145px !important;
+    height: 163px !important;
     width: 100% !important;
     bottom: 0;
     margin-left: 0;
@@ -2849,7 +2875,7 @@ section.interesting .interesting__arrow {
     bottom: 15px;
   }
   .history_section p {
-    height: 50px;
+    height: 64px;
     overflow: hidden;
     text-indent: 0;
   }
@@ -2859,7 +2885,6 @@ section.interesting .interesting__arrow {
     font-size: 13px;
   }
   .history_section .history_ico {
-    right: -40px;
     opacity: .75;
   }
   .history_section h2 {
@@ -3313,6 +3338,21 @@ section.interesting .interesting__arrow {
   .products__description {
     font-size: 14px;
     line-height: 18px;
+  }
+  .products__description_dop .i-family-recipe_text {
+    -webkit-transform: translateY(3px);
+    -ms-transform: translateY(3px);
+    transform: translateY(3px);
+  }
+  .products__description_dop .i-hit_text {
+    -webkit-transform: translateY(-1px);
+    -ms-transform: translateY(-1px);
+    transform: translateY(-1px);
+  }
+  .products__description_dop .i-novelty_text {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
   }
   .products__weight {
     font-size: 16px;

@@ -89,9 +89,12 @@
 		bottom: 10px;
 	}
 	.slide_down, .slide_up {
-		width: 60px;
-		height: 36px;
-		margin-left: -30px;
+		> svg {
+			
+			width: 60px;
+			height: 36px;
+		}
+//		margin-left: -30px;
 	}
 	footer .phones {
 		font-size: 22px;
@@ -742,15 +745,22 @@
 		background-image: url("../img/swg/Logo_svg.svg");
 		height: 70px;
 		width: 70px;
-		margin-left: -35px;
+//		margin-left: -35px;
 		bottom: -14px;
 		z-index: 15;
+		
+		left: 0;
+		right: 0;
+		margin: auto;
 	}
 	header:before {
 		content: "";
 		position: absolute;
-		left: 50%;
-		margin-left: -50px;
+//		left: 50%;
+//		margin-left: -50px;
+		left: 0;
+		right: 0;
+		margin: auto;
 		z-index: -1;
 		bottom: -25px;
 		height: 100px;
@@ -922,7 +932,7 @@
 		bottom: 16px;
 	}
 	.history_section .slider {
-		height: 145px !important;
+		height: 163px !important;
 		width: 100% !important;
 		bottom: 0;
 		margin-left: 0;
@@ -947,7 +957,7 @@
 		bottom: 15px;
 	}
 	.history_section p {
-		height: 50px;
+		height: 64px;
 		overflow: hidden;
 		text-indent: 0;
 	}
@@ -957,7 +967,7 @@
 		font-size: 13px;
 	}
 	.history_section .history_ico {
-		right: -40px;
+//		right: -40px;
 		opacity: .75;
 	}
 	.history_section h2 {
@@ -1446,6 +1456,26 @@
 		&__description {
 			font-size: 14px;
 			line-height: 18px;
+			&_dop {
+				
+				.i {
+					&-family-recipe {
+						&_text {
+							transform: translateY(3px);
+						}
+					}
+					&-hit {
+						&_text {
+							transform: translateY(-1px);
+						}
+					}
+					&-novelty {
+						&_text {
+							transform: translateY(0);
+						}
+					}
+				}
+			}
 		}
 		&__weight {
 			font-size: 16px;
