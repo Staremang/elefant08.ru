@@ -2,182 +2,7 @@ ymaps.ready(init);
 
 var myMap, myPlacemark, districtCollections;
 //массив обьектов районов
-var markMags = [//фирмовый магазин
-{
-	district: "district1",
-	mags: [{
-		name: "Велес ТЦ",
-		adr: "ул. Толстого, 32а",
-		time: "09:00 - 22:00",
-		coordinates: [43.121116074495795, 131.9132434]
-	}]
-}, //магазины города
-{
-	district: "district2",
-	mags: [{
-		name: "Велес ТЦ2",
-		adr: "ул. Толстого, 32а",
-		time: "09:00 - 22:00",
-		coordinates: [43.122116074495795, 131.9132434]
-	}, {
-		name: "Кольцевой ТЦ",
-		adr: "пр-т Кр. Знамени, 86а",
-		time: "09:00 - 22:00",
-		coordinates: [43.12649857453184, 131.91540749999996]
-	}, {
-		name: "Пять с плюсом / 5+ (сеть)",
-		adr: "ул. Некрасовская, 76",
-		time: "08:00 - 23:00",
-		coordinates: [43.12686707450806, 131.9110415]
-	}, {
-		name: "ОК супермаркет (сеть)",
-		adr: "пр-т Кр. Знамени, 82",
-		time: "09:00 - 21:00",
-		coordinates: [43.127137074508755, 131.9131259999999]
-	}, {
-		name: "ОК супермаркет (сеть)",
-		adr: "ул. Некрасовская, 29",
-		time: "09:00 - 21:00",
-		coordinates: [43.123162574523244, 131.9065415]
-	}, {
-		name: "24 часа",
-		adr: "пр-т Кр. Знамени, 111",
-		time: "09:00 - 21:00",
-		coordinates: [43.12680107450784, 131.91901899999996]
-	}]
-}, {
-	district: "district3",
-	mags: [{
-		name: "Велес ТЦ2",
-		adr: "ул. Толстого, 32а",
-		time: "09:00 - 22:00",
-		coordinates: [43.121116074495795, 131.9132434]
-	}, {
-		name: "Кольцевой ТЦ",
-		adr: "пр-т Кр. Знамени, 86а",
-		time: "09:00 - 22:00",
-		coordinates: [43.12549857453184, 131.91540749999996]
-	}, {
-		name: "Пять с плюсом / 5+ (сеть)",
-		adr: "ул. Некрасовская, 76",
-		time: "08:00 - 23:00",
-		coordinates: [43.12586707450806, 131.9110415]
-	}, {
-		name: "ОК супермаркет (сеть)",
-		adr: "пр-т Кр. Знамени, 82",
-		time: "09:00 - 21:00",
-		coordinates: [43.126137074508755, 131.9131259999999]
-	}, {
-		name: "ОК супермаркет (сеть)",
-		adr: "ул. Некрасовская, 29",
-		time: "09:00 - 21:00",
-		coordinates: [43.122162574523244, 131.9065415]
-	}, {
-		name: "24 часа",
-		adr: "пр-т Кр. Знамени, 111",
-		time: "09:00 - 21:00",
-		coordinates: [43.12580107450784, 131.91901899999996]
-	}]
-}, {
-	district: "district4",
-	mags: [{
-		name: "Велес ТЦ2",
-		adr: "ул. Толстого, 32а",
-		time: "09:00 - 22:00",
-		coordinates: [43.121116074495795, 131.9132434]
-	}, {
-		name: "Кольцевой ТЦ",
-		adr: "пр-т Кр. Знамени, 86а",
-		time: "09:00 - 22:00",
-		coordinates: [43.12549857453184, 131.91540749999996]
-	}, {
-		name: "Пять с плюсом / 5+ (сеть)",
-		adr: "ул. Некрасовская, 76",
-		time: "08:00 - 23:00",
-		coordinates: [43.12586707450806, 131.9110415]
-	}, {
-		name: "ОК супермаркет (сеть)",
-		adr: "пр-т Кр. Знамени, 82",
-		time: "09:00 - 21:00",
-		coordinates: [43.126137074508755, 131.9131259999999]
-	}, {
-		name: "ОК супермаркет (сеть)",
-		adr: "ул. Некрасовская, 29",
-		time: "09:00 - 21:00",
-		coordinates: [43.122162574523244, 131.9065415]
-	}, {
-		name: "24 часа",
-		adr: "пр-т Кр. Знамени, 111",
-		time: "09:00 - 21:00",
-		coordinates: [43.12580107450784, 131.91901899999996]
-	}]
-}, {
-	district: "district5",
-	mags: [{
-		name: "Велес ТЦ2",
-		adr: "ул. Толстого, 32а",
-		time: "09:00 - 22:00",
-		coordinates: [43.121116074495795, 131.9132434]
-	}, {
-		name: "Кольцевой ТЦ",
-		adr: "пр-т Кр. Знамени, 86а",
-		time: "09:00 - 22:00",
-		coordinates: [43.12549857453184, 131.91540749999996]
-	}, {
-		name: "Пять с плюсом / 5+ (сеть)",
-		adr: "ул. Некрасовская, 76",
-		time: "08:00 - 23:00",
-		coordinates: [43.12586707450806, 131.9110415]
-	}, {
-		name: "ОК супермаркет (сеть)",
-		adr: "пр-т Кр. Знамени, 82",
-		time: "09:00 - 21:00",
-		coordinates: [43.126137074508755, 131.9131259999999]
-	}, {
-		name: "ОК супермаркет (сеть)",
-		adr: "ул. Некрасовская, 29",
-		time: "09:00 - 21:00",
-		coordinates: [43.122162574523244, 131.9065415]
-	}, {
-		name: "24 часа",
-		adr: "пр-т Кр. Знамени, 111",
-		time: "09:00 - 21:00",
-		coordinates: [43.12580107450784, 131.91901899999996]
-	}]
-}, {
-	district: "district6",
-	mags: [{
-		name: "Велес ТЦ2",
-		adr: "ул. Толстого, 32а",
-		time: "09:00 - 22:00",
-		coordinates: [43.121116074495795, 131.9132434]
-	}, {
-		name: "Кольцевой ТЦ",
-		adr: "пр-т Кр. Знамени, 86а",
-		time: "09:00 - 22:00",
-		coordinates: [43.12549857453184, 131.91540749999996]
-	}, {
-		name: "Пять с плюсом / 5+ (сеть)",
-		adr: "ул. Некрасовская, 76",
-		time: "08:00 - 23:00",
-		coordinates: [43.12586707450806, 131.9110415]
-	}, {
-		name: "ОК супермаркет (сеть)",
-		adr: "пр-т Кр. Знамени, 82",
-		time: "09:00 - 21:00",
-		coordinates: [43.126137074508755, 131.9131259999999]
-	}, {
-		name: "ОК супермаркет (сеть)",
-		adr: "ул. Некрасовская, 29",
-		time: "09:00 - 21:00",
-		coordinates: [43.122162574523244, 131.9065415]
-	}, {
-		name: "24 часа",
-		adr: "пр-т Кр. Знамени, 111",
-		time: "09:00 - 21:00",
-		coordinates: [43.12580107450784, 131.91901899999996]
-	}]
-}, ];
+
 
 function init() {
 	myMap = new ymaps.Map("map",{
@@ -186,45 +11,6 @@ function init() {
 		controls: ['zoomControl', 'fullscreenControl']
 	});
 
-	// массив коллекций меток районов
-	districtCollections = [new ymaps.GeoObjectCollection(null,{
-		iconLayout: 'default#image',
-		iconImageHref: 'img/swg/map-marker.svg',
-		iconImageSize: [28, 28],
-		iconImageOffset: [-10, -28],
-		iconMaxHeight: 28,
-		iconMaxWidth: 28
-	}), new ymaps.GeoObjectCollection(null,{
-		iconLayout: 'default#image',
-		iconImageHref: 'img/swg/map-marker.svg',
-		iconImageSize: [28, 28],
-		iconImageOffset: [-10, -28]
-	}), new ymaps.GeoObjectCollection(null, {
-	   iconLayout: 'default#image',
-	   iconImageHref: 'img/swg/map-marker.svg',
-	   iconImageSize: [28, 28],
-	   iconImageOffset: [-10, -28]
-	 }), 
-	 new ymaps.GeoObjectCollection(null, {
-	   iconLayout: 'default#image',
-	   iconImageHref: 'img/swg/map-marker.svg',
-	   iconImageSize: [28, 28],
-	   iconImageOffset: [-10, -28]
-	 }), 
-	 new ymaps.GeoObjectCollection(null, {
-	   iconLayout: 'default#image',
-	   iconImageHref: 'img/swg/map-marker.svg',
-	   iconImageSize: [28, 28],
-	   iconImageOffset: [-10, -28]
-	 }), 
-	 new ymaps.GeoObjectCollection(null, {
-	   iconLayout: 'default#image',
-	   iconImageHref: 'img/swg/map-marker.svg',
-	   iconImageSize: [28, 38],
-	   iconImageOffset: [-10, -28]
-	 })
-	];
-
 	// вывод всех колекций на карту
 	print_all_mags();
 	// myMap.setBounds(districtCollections[0].getBounds());
@@ -232,38 +18,6 @@ function init() {
 ;
 $(document).ready(function() {
 
-	$("section.map .mag_list .name").on("click", function() {
-		$(this).parents("ul").children("li").removeClass("active");
-		$(this).parents("li").addClass("active");
-		myMap.geoObjects.get(0).get($(this).attr("data-id")).balloon.open();
-		myMap.panTo(markMags[parseInt($(this).parents("ul").attr("data-collection"))].mags[$(this).attr("data-id")].coordinates, {
-			delay: 1500
-		});
-	});
-	$("section.map .district li").on("click", function() {
-		$(this).parents("ul").children("li").removeClass("active");
-		$(this).addClass("active");
-		$("section.map .mag_list").removeClass("active");
-		$("section.map .mag_list#" + $(this).attr('data-tab')).addClass("active");
-		myMap.geoObjects.removeAll();
-		if ($(this).attr('data-collection') != 0) {
-			myMap.geoObjects.add(districtCollections[$(this).attr('data-collection')]);
-			myMap.setBounds(districtCollections[$(this).attr('data-collection')]);
-		} else {
-			print_all_mags();
-		}
-
-	});
-	$("section.map .tab.tab1").on("click", function() {
-		$("section.map .tab").removeClass("active");
-		$(this).addClass("active");
-		$("section.map .mag_list").removeClass("active");
-		$("section.map .mag_list#" + $(this).attr('data-tab')).addClass("active");
-		myMap.geoObjects.removeAll();
-		myMap.geoObjects.add(districtCollections[$(this).attr('data-collection')]);
-		myMap.setBounds(districtCollections[$(this).attr('data-collection')]);
-
-	});
 
 	$("section.map .tab.tab2").on("click", function() {
 		$("section.map .tab").removeClass("active");
@@ -271,18 +25,134 @@ $(document).ready(function() {
 		$("section.map .mag_list").removeClass("active");
 		print_all_mags();
 	});
+	var quantity = 0, item;
+	for (var i = 0; i <= markMags.length; i++) {
+		item = markMags[i]
+//	markMags.forEach(function(item, i, arr) {
+		if (i === 0) { // фирменные магазины
+			$('.map_header').append('<div class="tab tab1" data-tab="megatab1" data-collection="0">Фирменный магазин <div class="cnt">' + item.mags.length + '</div></div>')
+			$('.scroll_wrap').append('<ul class="mag_list active" data-collection="' + markMags.length + '" id="allTab"></ul>'); // Все магазины
+//			quantity += item.mags.length;
+			
+		} else if (i === markMags.length) {
+			$('.map_header').append('<div class="tab tab2 active"  data-tab="allTab">Магазины города <div class="cnt">' + quantity + '</div></div>');
+			$('.district').append('<li class="active" data-tab="allTab" data-collection="' + i + '"><span>Все на карте<div class="cnt">' + quantity + '</div></span></li>');
+		} else {
+			$('.district').append('<li data-tab="tab' + i + '" data-collection="' + i + '"><span>' + item.district + '<div class="cnt">' + item.mags.length + '</div></span></li>');
+			
+			$('.scroll_wrap').append('<ul class="mag_list" data-collection="' + i + '" id="tab' + i + '"></ul>');
+			for (var l = 0; l < item.mags.length; l++) {
+//				console.log(l);
+				quantity++;
+				$('.scroll_wrap').children(':last-child').append('<li>\
+								<div class="name" data-id="' + item.mags[l].id + '" >' + item.mags[l].name + '</div>\
+								<span class="adr">' + item.mags[l].adr + '</span>\
+								<span class="time">' + item.mags[l].time + '</span>\
+							</li>');
+				$('.scroll_wrap').children('[id="allTab"]').append('<li>\
+								<div class="name" data-id="' + item.mags[l].id + '" >' + item.mags[l].name + '</div>\
+								<span class="adr">' + item.mags[l].adr + '</span>\
+								<span class="time">' + item.mags[l].time + '</span>\
+							</li>');
+//				console.log(item.mags[l]);
+//				myPlacemark = new ymaps.Placemark(item.mags[l].coordinates, {
+//					balloonContent: "<div class='map_info'><h2>" + item.mags[l].name + "</h2><div class='adr'>" + item.mags[l].adr + "</div><div class='time'>" + item.mags[l].time + "</div></div>"
+//				});
+//				districtCollections[i].add(myPlacemark);
+			}
+//			myMap.geoObjects.add(districtCollections[i]);
+		}
+//		console.log(item)
+	}
+	
+	/**
+	* Выборка по району
+	*/
+	$("section.map .district li").on("click", function() {
+		$(this).parents("ul").children("li").removeClass("active");
+		$(this).addClass("active");
+		
+		$("section.map .mag_list").removeClass("active");
+		$("#" + $(this).attr('data-tab')).addClass("active");
+		
+		/**
+		* Удаляем все объекты с карты
+		*/
+		myMap.geoObjects.removeAll();
+	
+		/**
+		* Суем на карту объекты из массива districtCollections, где начальный и конечный id указаны в первом и последнем блоке
+		*/
+		for (var i = $("#" + $(this).attr('data-tab')).children(':first-child').children('.name').attr('data-id'), l = $("#" + $(this).attr('data-tab')).children(':last-child').children('.name').attr('data-id'); +i <= +l; i++) {
+			myMap.geoObjects.add(districtCollections[+i + markMags[0].mags.length - 1]);
+//			myMap.setBounds(districtCollections[+i - 1]);
+		}
 
+	});
+	
+	/**
+	* Клик по адресу
+	*/
+	$("section.map .mag_list .name").on("click", function() { // Выборка по магазину
+		$(this).parents("ul").children("li").removeClass("active");
+		$(this).parents("li").addClass("active");
+		
+		myMap.geoObjects.get($(this).attr("data-id") - $(this).parents('ul').children(':first-child').children('.name').attr('data-id')).balloon.open();
+		
+//		myMap.panTo(markMags[parseInt($(this).parents("ul").attr("data-collection"))].mags[$(this).attr("data-id")].coordinates, {
+//			delay: 1500
+//		});
+	});
+	$("section.map .tab.tab1").on("click", function() {
+		$("section.map .tab").removeClass("active");
+		$(this).addClass("active");
+		
+		$("section.map .mag_list").removeClass("active");
+		$("section.map .mag_list#" + $(this).attr('data-tab')).addClass("active");
+		myMap.geoObjects.removeAll();
+		
+		for (var i = $("#" + $(this).attr('data-tab')).children(':first-child').children('.name').attr('data-id'), l = $("#" + $(this).attr('data-tab')).children(':last-child').children('.name').attr('data-id'); +i <= +l; i++) {
+			myMap.geoObjects.add(districtCollections[+i + markMags[0].mags.length - 1]);
+//			myMap.setBounds(districtCollections[+i - 1]);
+		}
+//		myMap.setBounds(districtCollections[$(this).attr('data-collection')]);
+
+	});
+	$("section.map .tab.tab2").on("click", function() {
+		$("section.map .tab").removeClass("active");
+		$(this).addClass("active");
+		$("section.map .mag_list").removeClass("active");
+		$("section.map .mag_list#" + $(this).attr('data-tab')).addClass("active");
+		
+		print_all_mags();
+//		myMap.setBounds(districtCollections[$(this).attr('data-collection')]);
+
+	});
 });
 
 function print_all_mags() {
+	districtCollections = []; // Обнуляем массив меток
 	for (var i = 0, l = markMags.length; i < l; i++) {
 		for (var j = 0, k = markMags[i].mags.length; j < k; j++) {
 			myPlacemark = new ymaps.Placemark(markMags[i].mags[j].coordinates,{
 				balloonContent: "<div class='map_info'><h2>" + markMags[i].mags[j].name + "</h2><div class='adr'>" + markMags[i].mags[j].adr + "</div><div class='time'>" + markMags[i].mags[j].time + "</div></div>"
+			}, {
+				iconLayout: 'default#image',
+				iconImageHref: 'img/swg/map-marker.svg',
+				iconImageSize: [28, 28],
+				iconImageOffset: [-10, -28],
+				iconMaxHeight: 28,
+				iconMaxWidth: 28
 			});
-			districtCollections[i].add(myPlacemark);
-//			console.log(i, ' - ', districtCollections[i])
+			
+			districtCollections[districtCollections.length] = myPlacemark; // Заносим в массив каждую метку
 		}
-		myMap.geoObjects.add(districtCollections[i]);
+	}
+	
+	/**
+	* Суем на карту объекты из массива districtCollections, минуя метки фирменных магазинов
+	*/
+	for (var i = markMags[0].mags.length; i < districtCollections.length; i++) {
+		myMap.geoObjects.add(districtCollections[+i]);
 	}
 }
