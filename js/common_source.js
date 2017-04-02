@@ -58,41 +58,52 @@ $(document).ready(function () {
 	// };
 
 	// $("img, a").on("dragstart", function(event) { event.preventDefault(); });
-
-	$('.cnl-tab').on('click', function () {
-		var containerId = this.getAttribute('data-cnl-cont'),
-		    tabId = this.getAttribute('data-cnl-tab');
-		$('[data-cnl-cont="' + containerId + '"]').removeClass('active');
+	$('.num-list__item.cnl-tab').click(function () {
+		var cont = $(this).attr('data-cnl-cont'),
+			id = $(this).attr('data-cnl-tab');
+		$('.num-list__item.cnl-tab').removeClass('active');
 		$(this).addClass('active');
-
-		$('#' + containerId).children().hide();
-		$('#' + tabId).show();
 		
-		
-		$('.products__element').hide();
-		$('.products__element-min_slider').each(function() {
-			if ($(this).attr('style').indexOf('none') == -1) {
-				$('#' + $(this).find('.products__element-min').eq(0).attr('data-cnl-tab')).show();
-			}
-		})
-	});
+		$('#' + cont).children().hide();
+		$('#' + id).show();
+//		console.log('Нумерованый')
+		if ($(window).width() > 768) {
+			showProduct();
+		} else {
+			$('.products__element').hide();
+			$('#' + id).find('.products__element-min').each(function () {
+				console.log($(this).attr('data-cnl-tab'));
+				$('#' + $(this).attr('data-cnl-tab')).show();
+			})
+		}
+	})
 
 	if ($(window).width() > 768) {
 		$('.interesting__scroll').mCustomScrollbar({});
 		$('.products__element').hide();
 
+		$('.products__element-min.cnl-tab').click(function () {
+			$('#' + $(this).attr('data-cnl-cont')).children().hide();
+			$('#' + $(this).attr('data-cnl-tab')).show();
+
+			showProduct()
+		});
+		
 		$('.products__element-min_slider').each(function() {
 			if (!$(this).attr('style')) {
 				$('#' + $(this).find('.products__element-min').eq(0).attr('data-cnl-tab')).show();
 			}
 		})
-//		$('.products__element').each(function () {
-//			if ($(this).index()) {
-//				$(this).hide();
-//			}
-//		});
 	}
 });
+function showProduct() {
+	$('.products__element').hide();
+	$('.products__element-min_slider').each(function() {
+		if ($(this).attr('style').indexOf('none') == -1) {
+			$('#' + $(this).find('.products__element-min').eq(0).attr('data-cnl-tab')).show();
+		}
+	})
+}
 $(window).load(function () {
 	$(".loader_inner").fadeOut();
 	$(".loader").delay(400).fadeOut("slow");
