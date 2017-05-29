@@ -3,14 +3,13 @@ ymaps.ready(init);
 var myMap, myPlacemark, districtCollections;
 //массив обьектов районов
 
-
 function init() {
 	myMap = new ymaps.Map("map",{
 		center: [43.121116074495795, 131.912434],
 		zoom: 15,
 		controls: ['zoomControl', 'fullscreenControl']
 	});
-
+	
 	// вывод всех колекций на карту
 	print_all_mags();
 	// myMap.setBounds(districtCollections[0].getBounds());
@@ -64,6 +63,8 @@ $(document).ready(function() {
 		}
 //		console.log(item)
 	}
+
+	$(".map .scroll_wrap").mCustomScrollbar({});
 	
 	/**
 	* Выборка по району
@@ -134,25 +135,37 @@ function print_all_mags() {
 	districtCollections = []; // Обнуляем массив меток
 	for (var i = 0, l = markMags.length; i < l; i++) {
 		for (var j = 0, k = markMags[i].mags.length; j < k; j++) {
-			myPlacemark = new ymaps.Placemark(markMags[i].mags[j].coordinates,{
-				balloonContent: "<div class='map_info'><h2>" + markMags[i].mags[j].name + "</h2><div class='adr'>" + markMags[i].mags[j].adr + "</div><div class='time'>" + markMags[i].mags[j].time + "</div></div>"
-			}, {
-				iconLayout: 'default#image',
-				iconImageHref: 'img/swg/map-marker.svg',
-				iconImageSize: [28, 28],
-				iconImageOffset: [-10, -28],
-				iconMaxHeight: 28,
-				iconMaxWidth: 28
-			});
-			
-			districtCollections[districtCollections.length] = myPlacemark; // Заносим в массив каждую метку
+			(function(mark){
+				ymaps.geocode(mark.adr, {
+					results: 1
+				}).then(function (res) {
+					var coords = res.geoObjects.get(0).geometry.getCoordinates();
+
+					myPlacemark = new ymaps.Placemark(coords, {
+						balloonContent: "<div class='map_info'><h2>" + mark.name + "</h2><div class='adr'>" + mark.adr + "</div><div class='time'>" + mark.time + "</div></div>"
+					}, {
+						iconLayout: 'default#image',
+						iconImageHref: 'img/swg/map-marker.svg',
+						iconImageSize: [28, 28],
+						iconImageOffset: [-10, -28],
+						iconMaxHeight: 28,
+						iconMaxWidth: 28
+					});
+
+					myMap.geoObjects.add(myPlacemark);
+					districtCollections[mark.id] = myPlacemark; // Заносим в массив каждую метку
+//					districtCollections[districtCollections.length] = myPlacemark; // Заносим в массив каждую метку
+				});
+				
+				
+			})(markMags[i].mags[j])
 		}
 	}
 	
 	/**
 	* Суем на карту объекты из массива districtCollections, минуя метки фирменных магазинов
 	*/
-	for (var i = markMags[0].mags.length; i < districtCollections.length; i++) {
-		myMap.geoObjects.add(districtCollections[+i]);
-	}
+//	for (var i = markMags[0].mags.length; i < districtCollections.length; i++) {
+//		myMap.geoObjects.add(districtCollections[+i]);
+//	}
 }

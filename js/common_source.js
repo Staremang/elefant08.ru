@@ -148,8 +148,6 @@ $(window).load(function () {
 	$(".history_modal .text").mCustomScrollbar({});
 	$(".newsModal .text").mCustomScrollbar({});
 
-	$(".map .scroll_wrap").mCustomScrollbar({});
-
 	$(".modal .close").on("click", function () {
 		$(this).parents(".modal").addClass("hideModal");
 		$("body").removeClass("overflov_hidden");
